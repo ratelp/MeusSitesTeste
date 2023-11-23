@@ -18,20 +18,24 @@
     </header>
     <main>
         <h1>FORMULÁRIO</h1>
-        <form action="teste.php" method="post">
+        <form action="teste.php" method="post" autocomplete="on">
             <div>
                 <label for="input1">Campo1:</label>
-                <input type="text" id="input1" name="input" class="campin">
+                <input type="text" id="input1" name="input" class="campin" required maxlength="20" size="10" placeholder="sugestão">
             </div>
             <div>
                 <label for="input2">Campo2:</label>
-                <input type="text" id="input2" name="input" class="campin">
+                <input type="text" id="input2" name="input" class="campin" required maxlength="20" size="10" placeholder="sugestão">
             </div>
             <div>
                 <label for="input3">Campo3:</label>
-                <input type="date" id="input3" name="input">
+                <input type="date" id="input3" name="input" required>
             </div>
-            <div class="cente"><input type="submit" value="Enviar" class="enviarbot"></div>
+            <div>
+                <label for="input4">Campo4:</label>
+                <input type="password" id="input4" name="input" class="campin" required minlength="6" maxlength="15" size="8" autocomplete="current-password">
+            </div>
+            <div class="cente"><input type="submit" value="Enviar" class="enviarbot"> <input type="reset" value="Apagar" class="enviarbot"></div>
         </form>
     </main>
 </body>
