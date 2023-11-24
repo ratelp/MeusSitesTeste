@@ -33,9 +33,43 @@
             </div>
             <div>
                 <label for="input4">Campo4:</label>
-                <input type="password" id="input4" name="input" class="campin" required minlength="6" maxlength="15" size="8" autocomplete="current-password">
+                <input type="tel" id="input4" name="input" required placeholder="(00) 00000-0000" pattern="^\(\d{2}\)\s\d{5}-\d{4}$">
+            </div>
+            <div>
+                <label for="radio1">Radio1</label>
+                <input type="radio" name="radio" id="radio1" value="valor1">
+                <label for="radio2">Radio2</label>
+                <input type="radio" name="radio" id="radio2" value="valor2">
+            </div>
+            <div>
+                <label for="input5">Campo5:</label>
+                <input type="password" id="input5" name="input" class="campin" required minlength="6" maxlength="15" size="8" autocomplete="current-password">
             </div>
             <div class="cente"><input type="submit" value="Enviar" class="enviarbot"> <input type="reset" value="Apagar" class="enviarbot"></div>
+            <fieldset>
+                <legend>
+                    Confirmações finais
+                </legend>
+                <div>
+                    <label for="cinput1">Confirmação1:</label>
+                    <input type="text" name="input" id="cinput1" class="campin" required maxlength="20" placeholder="sugestão"
+                    size="10">
+                </div>
+                <div>
+                    <label for="cinput2">Confirmação2:</label>
+                    <input type="password" name="input" id="cinput2" class="campin" required minlength="6" maxlength="15" size="8">
+                </div>
+                <div>
+                    <label for="ccheck1">CHECK1</label>
+                    <input type="checkbox" id="ccheck1">
+                    <label for="ccheck2">CHECK2</label>
+                    <input type="checkbox" id="ccheck2">
+                </div>
+                <div class="cente">
+                    <input type="submit" value="Enviar" class="enviarbot">
+                    <input type="reset" value="Apagar" class="enviarbot">
+                </div>
+            </fieldset>
         </form>
     </main>
 </body>
