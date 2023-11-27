@@ -66,6 +66,17 @@
                             
                         </textarea>
                     </div>
+
+                    <div>
+                        <label for="inm1">Número 1</label>
+                        <input type="number" name="numero1" id="inm1" oninput="isoma.innerHTML = Number(inm1.value) + Number(inm2.value)">
+                    </div>
+                    <div>
+                        <label for="inm2">Número 2</label>
+                        <input type="number" name="numero2" id="inm2" oninput="isoma.innerHTML = Number(inm1.value) + Number(inm2.value)">
+                    </div>
+                    <label for="isoma">Soma:</label>
+                        <output id="isoma">0</output>
                 </form>
             </aside>
         </article>
