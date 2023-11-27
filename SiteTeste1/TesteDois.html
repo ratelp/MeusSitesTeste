@@ -35,6 +35,39 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, rerum modi? Veritatis esse quidem neque recusandae facere doloremque eaque odio explicabo voluptate ea? Modi fugit deleniti sunt optio illum tempore!</p>
                 <aside>Lorem ipsum dolor sit amet.</aside>
             </section>
+            <aside>
+                <form action="texte.php" method="POST">
+                    <div>
+                        <label for="isele">Lista de Seleção:</label>
+                        <select name="seleção" id="isele" class="selec">
+                            <optgroup label="Grupo de seleção 1">
+                                <option value="OP1">Opção 1</option>
+                                <option value="OP2">Opção 2</option>
+                                <option value="OP3">Opção 3</option>
+                            </optgroup>
+                            <optgroup label="Grupo de seleção 2">
+                                <option value="OP4">Opção 4</option>
+                                <option value="OP5">Opção 5</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="idatl">DataList:</label>
+                        <input type="text" name="DataList" id="idatl" list="lstdat">
+                        <datalist id="lstdat">
+                            <option value="OP1">Opção1</option>
+                            <option value="OP2">Opção 2</option>
+                            <option value="OP3">Opção 3</option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <label for="txtare" class="text">TextArea:</label>
+                        <textarea name="texto" id="txtare" cols="30" rows="10">
+                            
+                        </textarea>
+                    </div>
+                </form>
+            </aside>
         </article>
     </main>
     <footer><a href="TesteCor.html">Voltar</a></footer>

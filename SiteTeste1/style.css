@@ -128,3 +128,14 @@ form div {
     color: #485716;
     background-color: #9bbb32;
 }
+aside {
+    margin-top: 20px;
+}
+
+.selec {
+    border: none;
+    border-radius: 5px;   
+}
+.text {
+    display: block;
+}
