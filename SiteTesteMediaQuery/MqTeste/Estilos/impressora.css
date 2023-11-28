@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* Estilo para IMPRESSORA*/ 
+
+* {
+    margin: 0px;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html {
+    font-size: 1.4em ;
+    line-height: 1.2em;
+    text-align: justify;
+    padding: 10px;
+}
+header {
+    text-align: center;
+}
+
+header nav , aside , footer {
+    display: none;
+}
+
+main::after {
+    padding: 0px 10px;
+    content:'Esse conteúdo foi impresso apartir do site XXX';
+}
