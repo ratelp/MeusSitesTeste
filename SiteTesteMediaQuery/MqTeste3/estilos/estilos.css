@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/*Estilos especificados*/ 
+
+/* Typical Device BreakPoints */
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    html {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#celu {
+        display: none;
+    }
+    img#tabl {
+        display: block;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+    html{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#celu {
+        display: none;
+    }
+    img#comp {
+        display: block;
+    }
+}
+
+@media screen and (min-width:1025px) {
+    html{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#celu {
+        display: none;
+    }
+    img#tele {
+        display: block;
+    }
+}
+
+@media print {
+    * {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    main h1 {
+        color: black;
+        text-shadow: none;
+    }
+
+    main {
+        border: 2px solid black;
+    }
+    img#celu{
+        display: none;
+    }
+    img#prin{
+        display: block;
+    }
+}
