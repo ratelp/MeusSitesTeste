@@ -55,7 +55,7 @@ button{
     cursor: pointer;
 }
 
-article {
+main {
     background-color: rgb(140, 150, 160);
     width: 90vw;
     margin: 10px auto;
