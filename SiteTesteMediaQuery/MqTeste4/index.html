@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="estilos/mobifirst.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <main>
         <header>
             <h1>TITULO PRINCIPAL</h1>
-            <menu>
+            <span class="material-symbols-outlined hamb" onclick="clickMenu()">menu</span>
+            <menu id="opcao">
                 <a href="#"><button alt="BOTÃO OPÇÃO1">OPÇÃO1</button></a>
                 <a href="#"><button alt="BOTÃO OPÇÃO2">OPÇÃO2</button></a>
                 <a href="#"><button alt="BOTÃO OPÇÃO3">OPÇÃO3</button></a>
@@ -26,5 +28,13 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem harum dicta hic repudiandae deserunt animi ipsam, delectus nemo deleniti modi voluptas rerum mollitia id, sint officiis cum voluptatibus natus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ipsam sequi, numquam adipisci dicta fugiat esse expedita exercitationem architecto sapiente blanditiis commodi doloremque harum minima reiciendis natus aliquid nisi. Asperiores.</p>
         </article>
     </main>
+    <script>
+        function clickMenu(){
+            if (opcao.style.display == 'block') {
+                opcao.style.display = 'none'
+            } else {
+            opcao.style.display = 'block'
+        }}
+    </script>
 </body>
 </html>
