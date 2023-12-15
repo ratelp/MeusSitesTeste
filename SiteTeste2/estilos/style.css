@@ -35,6 +35,8 @@ main {
     top: 50%;
     left: 50%;
     translate: -50% -50%;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
 section#imagem {
@@ -73,6 +75,7 @@ p {
     color: white;
     font-size: 0.7em;
     translate: 0 -4px;
+    width: calc(100% - 40px);
 }
 .enviar {
     background-color: var(--color_04);

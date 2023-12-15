@@ -4,7 +4,7 @@
     
     main {
         width: 600px;
-        height: 300px;
+        height: 260px;
     }
 
     section#imagem {
@@ -16,13 +16,14 @@
         float: right;
         width: 70%;
     }
+
 }
 
 @media screen and (min-width: 1025px) {
 
     main {
         width: 800px;
-        height: 400px;
+        height: 300px;
     }
     section#imagem {
         float: right;
@@ -32,5 +33,12 @@
     section#formulario{
         float: left;
         width: 50%;
+    }
+    #inicio {
+        margin-bottom: 30px;
+    }
+    #inicio p {
+        font-size: 1em;
+        margin-top: 15px;
     }
 }
