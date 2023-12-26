@@ -1,4 +1,4 @@
-.pai {
+/* .pai {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -15,4 +15,89 @@
     border: 2px solid blue;
     flex-wrap: nowrap;
 }
+<!-- GRID LAYOUT -->
+.pai2 {
+    margin-top: 5px;
+    background-color: rgb(104, 104, 104);
+    border: 2px solid black;
+    padding: 15px;
+    display: grid;
+    grid-template-columns:  20% auto 20%;
+    gap: 5px;
+}
 
+.filho2 {
+    background-color: blueviolet;
+    border: 1px solid violet;
+    padding: 10px;
+}
+.container {
+    background-color: rgb(104, 104, 104);
+    border: 2px solid black;
+    padding: 15px;
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+        'header header header'
+        'sidebar content content'
+        'footer footer footer'
+    ;
+}
+
+.container div {
+    background-color: blueviolet;
+    border: 1px solid violet;
+    padding: 10px;
+}
+
+#header {
+    grid-area: header;
+}
+#content {
+    grid-area: content;
+    height: 50vh;
+}
+#sidebar {
+    grid-area: sidebar;
+    height: 50vh;
+}
+#footer {
+    grid-area: footer;
+} */
+
+.container {
+    background-color: rgb(104, 104, 104);
+    border: 2px solid black;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.container div {
+    background-color: blueviolet;
+    border: 1px solid violet;
+    padding: 10px;
+}
+
+#item-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#item-2 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#item-3 {
+    justify-self: end;
+    height: 200px;
+}
+#item-4 {
+    align-self: center;
+}
+#item-5 {
+    justify-self: start;
+    height: 200px;
+}
+#item-6 {
+    align-self: end;
+}
